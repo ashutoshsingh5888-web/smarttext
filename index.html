@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,7 +8,7 @@
 
 <title>SmartText – Text Expander for Chrome</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -19,79 +20,96 @@ box-sizing:border-box;
 
 body{
 font-family:'Inter',sans-serif;
-background:linear-gradient(135deg,#0f172a,#020617);
+background:#020617;
 color:white;
 }
 
 .container{
-max-width:1100px;
+max-width:1200px;
 margin:auto;
-padding:40px 20px;
+padding:40px 24px;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:80px;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+}
+
+.install{
+background:linear-gradient(135deg,#22c55e,#10b981);
+padding:10px 22px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:500;
 }
 
 .hero{
 text-align:center;
-padding:120px 20px;
+padding:100px 0;
 }
 
 .hero h1{
-font-size:56px;
-margin-bottom:15px;
+font-size:64px;
 font-weight:600;
+margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
+font-size:22px;
 color:#94a3b8;
+max-width:700px;
+margin:auto;
 }
 
-.install-btn{
-display:inline-block;
+.cta{
 margin-top:40px;
-padding:16px 36px;
+display:inline-block;
 background:linear-gradient(135deg,#34d399,#10b981);
-color:white;
-font-size:18px;
+padding:18px 40px;
 border-radius:10px;
+font-size:18px;
 text-decoration:none;
-transition:0.3s;
+color:white;
 }
 
-.install-btn:hover{
-transform:scale(1.05);
-}
-
-.features{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 margin-top:80px;
 }
 
-.feature{
-background:#020617;
-padding:35px;
+.card{
+background:rgba(255,255,255,0.03);
+border:1px solid rgba(255,255,255,0.05);
+padding:30px;
 border-radius:14px;
-border:1px solid #1e293b;
 }
 
-.feature h3{
+.card h3{
 margin-bottom:10px;
-font-size:20px;
 }
 
-.feature p{
+.card p{
 color:#94a3b8;
 }
 
 .section-title{
 text-align:center;
-margin-top:120px;
 font-size:36px;
+margin-top:120px;
 }
 
 .screenshots{
-margin-top:50px;
+margin-top:60px;
 display:grid;
 gap:40px;
 }
@@ -102,107 +120,108 @@ border-radius:12px;
 border:1px solid #1e293b;
 }
 
+.big-cta{
+text-align:center;
+margin-top:140px;
+padding:80px;
+background:linear-gradient(135deg,#0f172a,#020617);
+border-radius:16px;
+}
+
 .footer{
 text-align:center;
 margin-top:120px;
-padding-bottom:40px;
 color:#64748b;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
+<div class="nav">
+<div class="logo">SmartText</div>
+<a class="install" href="#">Add to Chrome</a>
+</div>
+
 <section class="hero">
 
-<h1>SmartText</h1>
+<h1>Type Less. Say More.</h1>
 
-<p>Text Expander & Autocomplete for Chrome</p>
+<p>
+SmartText lets you create shortcuts that instantly expand into full phrases while typing anywhere on the web.
+</p>
 
-<p>Create shortcuts → expand full phrases instantly.</p>
-
-<a class="install-btn" href="#">
-Add to Chrome
-</a>
+<a class="cta" href="#">Install SmartText</a>
 
 </section>
 
-<section>
+<h2 class="section-title">Why SmartText</h2>
 
-<h2 class="section-title">Features</h2>
+<div class="grid">
 
-<div class="features">
-
-<div class="feature">
-<h3>Create Shortcuts</h3>
-<p>Define custom text shortcuts for frequently used phrases.</p>
+<div class="card">
+<h3>Text Shortcuts</h3>
+<p>Create shortcuts for frequently used phrases.</p>
 </div>
 
-<div class="feature">
-<h3>Expand While Typing</h3>
-<p>Shortcuts instantly expand into full sentences as you type.</p>
+<div class="card">
+<h3>Instant Expansion</h3>
+<p>Expand shortcuts automatically while typing.</p>
 </div>
 
-<div class="feature">
+<div class="card">
 <h3>Works Everywhere</h3>
-<p>Use SmartText across emails, forms, documents and websites.</p>
+<p>Use SmartText across websites, emails and forms.</p>
 </div>
 
-<div class="feature">
+<div class="card">
 <h3>Save Time</h3>
-<p>Stop typing repetitive messages again and again.</p>
+<p>Eliminate repetitive typing tasks.</p>
 </div>
 
-<div class="feature">
-<h3>Simple Interface</h3>
-<p>Manage shortcuts easily using the SmartText popup.</p>
-</div>
-
-<div class="feature">
+<div class="card">
 <h3>Lightweight</h3>
-<p>Fast and minimal extension designed for productivity.</p>
+<p>Fast extension that doesn't slow your browser.</p>
+</div>
+
+<div class="card">
+<h3>Easy Management</h3>
+<p>Edit and manage shortcuts easily.</p>
 </div>
 
 </div>
-
-</section>
-
-<section>
 
 <h2 class="section-title">Screenshots</h2>
 
 <div class="screenshots">
 
-<img src="screenshot1.png">
-
-<img src="screenshot2.png">
-
-<img src="screenshot3.png">
+<img src="ss1_hero.png">
+<img src="ss2_popup.png">
+<img src="ss3_everywhere.png">
 
 </div>
 
-</section>
+<div class="big-cta">
 
-<section class="hero">
+<h2>Start Typing Smarter</h2>
+<p style="margin-top:10px;color:#94a3b8">Create shortcuts and expand them instantly.</p>
 
-<h2>Start Typing Faster</h2>
+<a class="cta" href="#" style="margin-top:30px">Add to Chrome</a>
 
-<a class="install-btn" href="#">
-Install SmartText
-</a>
-
-</section>
+</div>
 
 <div class="footer">
 
-<p>SmartText – Save hours of typing every week.</p>
+<p>SmartText – Productivity tool for faster typing.</p>
 
 </div>
 
 </div>
 
 </body>
+
 </html>
